@@ -137,11 +137,73 @@
 
 //Mouse event
 
-let btn = document.getElementById("btn");
-function click1(){
-    console.log("click1 activated..")
-}
-btn.addEventListener("mousedown",click1);
+// let btn = document.getElementById("btn");
+// function click1(){
+//     console.log("click1 activated..")
+// }
+// btn.addEventListener("mousedown",click1);(
+
+
+
+
+// Given an array of integers, determine whether the sum of its elements is even or odd.
+
+// The return value should be a string ("odd" or "even").
+
+// If the input array is empty, consider it as an array with a zero ([0]).
+
+// Examples
+
+// function evenOrOdd(arr){
+//     let result = arr.reduce((acc , curr)=> acc += curr , 0)
+    
+//     return result % 2 === 0 ? "even": "odd"
+// }
+// console.log( evenOrOdd([0]) , "even");
+
+// console.log( evenOrOdd([1]) , "odd");
+
+// console.log( evenOrOdd([]) , "even");
+
+// console.log( evenOrOdd([0, 1, 5]) , "even");
+
+
+
+// Create a function that takes two numbers as arguments and returns their sum.
+
+// Examples
+// function addition(num1 , num2){
+//     return num1 + num2
+// }
+// console.log( addition(3, 2) , 5);
+
+// console.log( addition(-3, -6) , -9);
+
+// console.log( addition(7, 3) , 10);
+
+
+
+
+let btn1 = document.getElementById("btn1");
+let btn2 = document.getElementById("btn2");
+let btn3 = document.getElementById("btn3");
+let win;
+let url = "http://www.google.com";
+let feacher = 'height=500px,width=500px';
+
+btn1.addEventListener("click",function(){
+    win = window.open(url,"google",feacher);
+});
+
+
+btn2.addEventListener("click",function(){
+    win = window.open("http://www.yahoo.com","google",feacher);
+});
+
+
+btn3.addEventListener("click",function(){
+    win.close();
+});
 
 
 
